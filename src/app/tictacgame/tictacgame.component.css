@@ -6,11 +6,11 @@
 .result1{
   
   text-align: center;
-  float: none!important;
+  
 }
 .result{
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
     width: 40px;
     color: #95a7c1;
     display: inline-block;
@@ -31,9 +31,31 @@
     background: #54667f;
     box-shadow: 3px 3px 0 0 #344359;
     color: white;
-    font-size: xx-large;
+    font-size: 36px;
     font-weight: bolder;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
 }
+.btn:hover{
+
+    border: 3px solid transparent;
+    border-top-color: rgba(255,255,255,.3);
+    border-bottom-color: rgba(255,255,255,.3);
+    animation: 1s infinite spinner;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: spinner;
+    -webkit-animation: 1s infinite spinner ;
+    box-sizing: border-box;
+}
+
+
 table {
     border-collapse: collapse;
     width: 500px;
@@ -42,17 +64,28 @@ table {
   }
   table, tr, td {
     border: 3px solid #283344;
-    z-index: 10;
   }
+  td{
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    width: 167px;
+    height: 167px;
+    cursor: pointer;
+    
+    
+  }
+  td:hover{
+    background-color: rgb(129, 32, 32);
+  }
+  td:active{
+    background-color: rgb(129, 32, 32);
+  }
+
   .bgr{
     color: #4c525c;
     background: #4c525c;
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
+    
     background-color: rgb(76, 82, 92);
 }
+

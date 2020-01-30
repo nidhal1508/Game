@@ -1,21 +1,21 @@
 
 <div class="container bgr">
     <div class="row">
-        <div class=" col-12 col-md-6 col-lg-6 mx-auto result1">
+        <div class="col-12 col-md-6 col-lg-6 mx-auto result1">
                 
             <br>
                 <br>
  
             <ul class="Res">
                 <li class="Res">
-                    <span class="result">0</span>
+                    <span class="result" #resultat1>{{resul1}}</span>
 <button class="btn">X</button>
 
                 </li>
                 <li class="Res">
                         
                         <button class="btn">O</button>
-                        <span class="result">0</span>
+                        <span class="result" #resultat2>{{resul2}}</span>
 
                 </li>
             </ul>
@@ -25,21 +25,22 @@
     <div class="row">
             <div class="form-group col-12 col-md-6 col-lg-6 mx-auto">
                    
-                    <table _ngcontent-c1="" class="tic-tac-toe-table js-table">
-                        <tbody _ngcontent-c1="">
-                            <tr _ngcontent-c1="">
-                                <td _ngcontent-c1="" class="tic-tac-toe-table-cell js-cell " data-index="0"><!----><!----></td>
-                                <td _ngcontent-c1="" class="tic-tac-toe-table-cell js-cell" data-index="1"><!----><!----></td>
-                                <td _ngcontent-c1="" class="tic-tac-toe-table-cell js-cell" data-index="2"><!----><!----></td>
+                    <table >
+                        <tbody>
+                            <tr>
+                                <td  (click)="gameset(0)" #ida0  >{{game[0]}}</td>
+                                <td (click)="gameset(1)" #ida1  >{{game[1]}}</td>
+                                <td (click)="gameset(2)" #ida0 >{{game[2]}}</td>
                             </tr>
-                                <tr _ngcontent-c1="">
-                                    <td _ngcontent-c1="" class="tic-tac-toe-table-cell js-cell" data-index="3"><!----><!----></td>
-                                    <td _ngcontent-c1="" class="tic-tac-toe-table-cell js-cell" data-index="4"><!----><!----></td>
-                                    <td _ngcontent-c1="" class="tic-tac-toe-table-cell js-cell" data-index="5"><!----><!----></td>
+                                <tr>
+                                    <td (click)="gameset(3)" #id3  >{{game[3]}}</td>
+                                    <td (click)="gameset(4)" #id4  >{{game[4]}}</td>
+                                    <td (click)="gameset(5)" #id5  >{{game[5]}}</td>
                                 </tr>
-                                <tr _ngcontent-c1=""><td _ngcontent-c1="" class="tic-tac-toe-table-cell js-cell" data-index="6"><!----><!----></td>
-                                    <td _ngcontent-c1="" class="tic-tac-toe-table-cell js-cell" data-index="7"><!----><!----></td>
-                                    <td _ngcontent-c1="" class="tic-tac-toe-table-cell js-cell" data-index="8"><!----><!----></td>
+                                <tr>
+                                    <td (click)="gameset(6)" #id6 >{{game[6]}}</td>
+                                    <td (click)="gameset(7)" #id7  >{{game[7]}}</td>
+                                    <td (click)="gameset(8)" #id8  >{{game[8]}}</td>
                                 </tr>
                             </tbody>
                         </table>
